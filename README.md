@@ -3,10 +3,10 @@ use makrdown lable to description your project
 
 ###常用git命令手册
 选择一个工作目录，然后初始化版本库
-cd ~
-mkdir learngit
-cd learngit
-git init
+cd ~  
+mkdir learngit  
+cd learngit  
+git init  
 
 ###关联远程仓库
 git remote add origin git:github/xincun/learngit.git
