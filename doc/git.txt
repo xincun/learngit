@@ -1,0 +1,19 @@
+What local branch you have checked out?
+
+What git status shows?
+
+You are probably working on some other branch then the local master branch. If you want to fetch new commits from github and merge them to the local master branch, you have to:
+
+git checkout master
+git pull
+If you want those commits in the branch, on which you are working, you need:
+
+git pull origin master
+You were close in your try from PS, but the last param should be branch name, not the repo url.
+
+You can also just fetch new commits from github, and do not merge it into any local branch, with:
+
+git fetch origin
+Then review those changes with git diff, git log, etc, and merge later to the currently checked out branch with:
+
+git merge origin/master
