@@ -1,0 +1,32 @@
+
+
+如果提示java到jvm无法初始化
+
+root权限打开
+vim /etc/environment 
+
+增加
+export _JAVA_OPTIONS="-Xms64m -Xmx64m -Xmn32m"
+
+配置java环境
+cd /usr
+find -name java
+
+找出要到版本目录
+
+vim ~/.base_profile
+
+增加路径，然后重启 
+export JAVA_HOME=/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.65.x86_64
+export PATH=$JAVA_HOME/bin:$PATH
+export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+
+
+要运行编译后到.class文件时候，注意类的package目录。
+
+
+
+
+
+
+
