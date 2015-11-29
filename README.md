@@ -20,3 +20,20 @@ git push origin master
 ###How do I commit all deleted files in Git?
 git add -u  
 This tells git to automatically stage tracked files -- including deleting the previously tracked files.  
+
+###仅在暂存区删除，保留文件在当前目录，不再跟踪
+git rm –cached readme.txt
+
+###重命名文件
+git mv reademe.txt readme
+
+###修改最后一次提交注释的，利用–amend参数
+git commit --amend
+
+
+###假设你已经使用git add .，将修改过的文件a、b加到暂存区现在你只想提交a文件，不想提交b文件，应该这样
+git reset HEAD b  
+
+取消对文件的修改  
+git checkout –- readme.txt
+
