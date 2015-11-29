@@ -16,3 +16,7 @@ git pull
 
 ###提交到远程仓库
 git push origin master
+
+###How do I commit all deleted files in Git?
+git add -u  
+This tells git to automatically stage tracked files -- including deleting the previously tracked files.  
